@@ -9,14 +9,12 @@
 
 **What it does** : 
 - It sets the camera of the Front viewport to the fSpy match at real-world scale, 
-- puts the photo on a textured plane whose origin lands exactly on the fSpy origin. 
+- puts the photo on a textured plane whose origin lands exactly on the fSpy origin.
+- You are ready to start modeling! 
 
-**Requirements** : fSpy https://github.com/perarnia/fSpy/releases/tag/v1.0.3 <br>
+**Requirements** : Win, Rhino8 or later, Python 3, fSpy https://github.com/perarnia/fSpy/releases/tag/v1.0.3 <br>
 **Actual Plugin Version** : 2.14 <br>
-**License** : [GPL-3.0-or-later](LICENSE)
-
-## Requirements
-Windows, Rhino 8 or later (built-in Python 3), Fspy, Python 3.
+**License** : [GPL-3.0-or-later](LICENSE) GNU General Public License v3.0 or later: you can use, study, modify and share this code, and any distributed modified version must stay under the same license. See [LICENSE](LICENSE).
 
 ## Install
 1. Download `Fspy_importer_CC.py` and put it in any folder.
@@ -24,6 +22,10 @@ Windows, Rhino 8 or later (built-in Python 3), Fspy, Python 3.
    ```
    ! _-RunPythonScript "C:\...\Fspy_importer_CC\Fspy_importer_CC.py"
    ```
+## Interface
+inputs : fSpy project file (`.fspy`), which holds both the calibration and the photo. 
+
+
 ## How to
 1. Highly recommanded to understand the basics of fSpy. Everything you need to know for the basics here in this excellent youtube video by Bartochsz Pampush https://www.youtube.com/watch?v=daiMOYR8GS8&t=1343s
 <p>&nbsp;</p>
@@ -52,12 +54,5 @@ Windows, Rhino 8 or later (built-in Python 3), Fspy, Python 3.
 
 ** Reference design credit : Alyssa Kapito
 
-
-## Inputs
-fSpy project file (`.fspy`), which holds both the calibration and the photo. 
-
 ## Contributing
 Improvements are welcome. Start with [ARCHITECTURE.md](ARCHITECTURE.md), which explains how the single file is organized and where each step lives.  Version history: [CHANGELOG.md](CHANGELOG.md).
-
-## License
-GNU General Public License v3.0 or later: you can use, study, modify and share this code, and any distributed modified version must stay under the same license. See [LICENSE](LICENSE).
